@@ -1,0 +1,97 @@
+<?php
+for ($i=1; $i <=20; $i++){
+  echo str_repeat('*', $i)."<br>";
+}
+for ($i=20; $i >=1; $i--){
+    echo str_repeat('*', $i)."<br>";
+  }
+
+ 
+//   wmic memphysical get maxcapacity, memorydevices
+// MaxCapacity  Memorydevices
+
+$num =5;
+for ($i = 1; $i <= $num; $i++){
+    for ($j=1; $j<=10; $j++){
+      echo "$i x $j=" .$i*$j. "<br>";
+    }
+    echo "<br>";
+    echo "<br>";
+}
+
+       // Number of Power
+for ($i=2; $i<=10;$i++){
+  for($j=1; $j<=10; $j++){
+    echo "[".($i*$j)."]";
+  }
+  echo "<br>";
+}
+echo "<br>";
+echo "<br>";
+          // Even Number
+for ($i=1; $i<=100; $i++){
+    if($i%2==0){
+      echo "$i";
+      echo ",";
+      }
+  }
+  echo "<br>";
+echo "<br>";
+  echo '<br>';
+        //  Odd Number
+  for ($i=1; $i<=100; $i++){
+    if($i%2!=0){
+      echo "$i";
+      echo ",";
+      }
+  }
+echo "<br>";
+echo "<br>";
+
+$posts =['Arman','Sakib','Rahat'];
+foreach($posts as $post){
+  echo $post;
+  echo '<br>';
+};
+
+$i= 1;
+while ($i <=10){
+  echo $i;
+  $i++;
+  echo '<br>';
+}
+$i= 1;
+do {
+  echo $i;
+  $i++;
+  echo '<br>';
+}while($i <=10);
+
+$num = 20;
+function check (){
+  echo $GLOBALS['num'];
+}
+check ();
+echo '<br>';
+
+function checkk (){
+  $GLOBALS['user'] = 'user1';
+}
+checkk ();
+echo $GLOBALS['user'];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+      <form action="./process.php" method="$_POST">
+      <input type="text" placeholder="Enter your name "name =name ">
+        <input type="email" placeholder="Enter your email "name =email ">
+        <button type="submit">Register</button>
+      </form>
+</body>
+</html>
